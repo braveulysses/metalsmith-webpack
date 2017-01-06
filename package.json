@@ -25,6 +25,8 @@
   "devDependencies": {
     "assert-dir-equal": "^1.0.1",
     "crispy": "^2.0.0",
+    "jscs": "^3.0.7",
+    "jshint": "^2.9.4",
     "metalsmith": "^1.0.1",
     "mocha": "^2.0.1",
     "should": "^4.3.0"
