@@ -1,30 +1,33 @@
 {
-  "name": "metalsmith-webpack",
-  "version": "1.0.3",
-  "description": "A webpack plugin for Metalsmith",
+  "name": "metalsmith-webpack2",
+  "version": "2.0.0",
+  "description": "A Webpack 2 plugin for Metalsmith",
   "keywords": [
     "metalsmith",
     "javascript",
     "webpack"
   ],
   "author": "Christopher Cliff <ctcliff@gmail.com>",
+  "contributors": [
+    "Jacob Childress <jacobc@gmail.com>",
+    "Varya Stepanova",
+    "Alexander Jung-Loddenkemper"
+  ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/christophercliff/metalsmith-webpack"
+    "url": "http://github.com/braveulysses/metalsmith-webpack2"
   },
   "license": "MIT",
   "main": "./lib/",
   "scripts": {
-    "style": "./node_modules/.bin/crispy ./lib/ ./test/*.js",
-    "test": "npm run style && ./node_modules/.bin/mocha -r should --reporter spec"
+    "test": "./node_modules/.bin/mocha -r should --reporter spec"
   },
   "dependencies": {
     "enhanced-resolve": "^0.7.6",
-    "webpack": "^1.4.13"
+    "webpack": "2.3.3"
   },
   "devDependencies": {
     "assert-dir-equal": "^1.0.1",
-    "crispy": "^2.0.0",
     "jscs": "^3.0.7",
     "jshint": "^2.9.4",
     "metalsmith": "^1.0.1",
