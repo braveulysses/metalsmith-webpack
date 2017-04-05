@@ -43,4 +43,23 @@ describe('metalsmith-webpack', function () {
             })
     })
 
+    it('should allow source files to be ignored', function (done) {
+      (new Metalsmith('test/fixtures/ignore'))
+          .use(webpack({
+            context: path.resolve(__dirname, './fixtures/ignore/src/js'),
+            entry: './index.js',
+            output: {
+              path: path.resolve(__dirname, './fixtures/ignore/build/js'),
+              filename: 'bundle.js'
+            }
+          }))
+          .ignore('js')
+          .build(function (err, files) {
+            if (err) return done(err)
+            Object.keys(files).length.should.equal(2)
+            assertDir('test/fixtures/ignore/expected', 'test/fixtures/ignore/build')
+            return done(null)
+          })
+    })
+
 })
