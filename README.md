@@ -1,8 +1,8 @@
-# metalsmith-webpack
+# metalsmith-webpack2
 
-[![Build Status](https://travis-ci.org/christophercliff/metalsmith-webpack.png?branch=master)](https://travis-ci.org/christophercliff/metalsmith-webpack)
+[![Build Status](https://travis-ci.org/braveulysses/metalsmith-webpack2.svg?branch=master)](https://travis-ci.org/braveulysses/metalsmith-webpack2)
 
-A [Webpack][webpack] plugin for [Metalsmith][metalsmith].
+A [Webpack 2][webpack] plugin for [Metalsmith][metalsmith].
 
 ## Installation
 
